@@ -49,9 +49,9 @@ header a {
   border-radius: 5px;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 section img {
     max-width: 500px;
@@ -73,15 +73,80 @@ main h3 {
   font-size: 40px;
   line-height: 1.5;
   margin: 0;
-  color: #020209;
+  
 }
 main p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #020209;
+  
   opacity: 0.7;
 }
+
+main h4 {
+font-family: 'Poppins';
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+margin: 0;
+}
+main h5 {
+font-weight: 700;
+font-size: 13px;
+line-height: 1.5;  
+margin: 0;
+}
+.secondary {
+    background-color: #F8F8F8;
+}
+.secondary h2 {
+  text-transform: uppercase;  
+}
+.secondary h2, .secondary h3 {
+    text-align: center;
+}
+.btn {
+display: block; 
+color: white;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 3px;
+text-transform: uppercase;
+padding: 16px;
+background: #462CB3;
+text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+ grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+ grid-template-columns: 1fr 2fr 2fr;
+}
+.card {
+    background-color: white;
+    margin: 30px 0;
+}
+.card-body {
+    padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;  
+}
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
@@ -91,19 +156,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-}
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-.grid-2-columns {
- grid-template-columns: 1fr 1fr;
-}
-.grid-3-columns {
- grid-template-columns: 1fr 2fr 2fr;
-}
-.img-responsive {
-    max-width: 100%;
 }
 footer h3 {
   font-size: 20px;
