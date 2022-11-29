@@ -98,11 +98,8 @@ main h5 {
 .secondary {
   background-color: #f8f8f8;
 }
-.secondary h2 {
-  text-transform: uppercase;
-}
-.secondary h2,
-.secondary h3 {
+
+.text-center {
   text-align: center;
 }
 .btn {
@@ -118,7 +115,10 @@ main h5 {
   background: #462cb3;
   text-decoration: none;
 }
-
+.video-responsive {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -127,7 +127,7 @@ main h5 {
   display: grid;
 }
 .card-header.grid {
-    grid-gap: 0;
+  grid-gap: 0;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -155,6 +155,14 @@ main h5 {
 .img-responsive {
   width: 100%;
   display: block;
+}
+.photo-gallery {
+  display: grid;
+  gap: 30px;
+}
+.photo-gallery img {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 footer {
@@ -216,5 +224,12 @@ footer a {
   }
   .embed {
     aspect-ratio: 16 / 9;
+  }
+  .photo-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo-gallery {
+    display: grid;
+    gap: 20px;
   }
 }
