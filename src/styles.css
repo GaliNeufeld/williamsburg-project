@@ -180,11 +180,14 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  padding: 100px auto;
+  
 }
 footer h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
+  
 }
 footer p {
   font-size: 16px;
